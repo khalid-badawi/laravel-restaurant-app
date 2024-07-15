@@ -7,8 +7,6 @@
             <p>Explore our diverse menu featuring fresh, expertly prepared dishes designed to delight every palate. From
                 timeless classics to innovative<br> flavors, each item promises a memorable dining experience.</p>
         </div>
-
-
         <livewire:menu-filter />
     </div>
 @endsection

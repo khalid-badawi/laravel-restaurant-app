@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
             'user_id' => User::inRandomOrder()->first()->id,
         ]);
 
-        Articles::factory()->count(5)->create();
+        Articles::factory()->count(30)->create();
 
         RestaurantTable::factory()->count(10)->create();
 

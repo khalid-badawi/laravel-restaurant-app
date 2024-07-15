@@ -1,7 +1,7 @@
-<nav class="navbar navbar-light bg-light fixed-top navbar-expand-lg px-5 py-3">
+<nav class="navbar navbar-light bg-light fixed-top navbar-expand-lg px-5 py-3 bg-white">
     <div class="container-fluid">
         <div class="navbar-brand me-auto">
-            <h5>Bistro Bliss</h5>
+            <h3>Bistro Bliss</h3>
         </div>
 
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -13,19 +13,24 @@
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('home') ? 'active' : '' }} nav-element mx-lg-2" aria-current="page" href="{{ route('home') }}">Home</a>
+                        <a class="nav-link {{ request()->routeIs('home') ? 'active' : '' }} nav-element mx-lg-2"
+                            aria-current="page" href="{{ route('home') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('about') ? 'active' : '' }} mx-lg-2" href="{{ route('about') }}">About</a>
+                        <a class="nav-link {{ request()->routeIs('about') ? 'active' : '' }} mx-lg-2"
+                            href="{{ route('about') }}">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('menu') ? 'active' : '' }} mx-lg-2" aria-current="page" href="{{ route('menu') }}">Menu</a>
+                        <a class="nav-link {{ request()->routeIs('menu') ? 'active' : '' }} mx-lg-2" aria-current="page"
+                            href="{{ route('menu') }}">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('pages') ? 'active' : '' }} mx-lg-2" href="{{ route('pages') }}">Pages</a>
+                        <a class="nav-link {{ request()->routeIs('pages') ? 'active' : '' }} mx-lg-2"
+                            href="{{ route('pages') }}">Pages</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('contact') ? 'active' : '' }} mx-lg-2" href="{{ route('contact') }}">Contact</a>
+                        <a class="nav-link {{ request()->routeIs('contact') ? 'active' : '' }} mx-lg-2"
+                            href="{{ route('contact') }}">Contact</a>
                     </li>
                 </ul>
             </div>

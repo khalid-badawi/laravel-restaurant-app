@@ -7,8 +7,10 @@
 
     <title>Laravel</title>
     <link href="/bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet" />
-    @vite([  "resources/css/app.css",
-        "resources/js/app.js",])
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     @livewireStyles
 
@@ -22,9 +24,11 @@
         @yield('content')
     </div>
 
+    <footer>
+        <x-footer />
+    </footer>
     <script src="/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
     @livewireScripts
-
 </body>
 
 </html>

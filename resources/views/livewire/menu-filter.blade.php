@@ -1,5 +1,5 @@
 <div>
-    <div class='container d-flex justify-content-center mt-4 mb-5'>
+    <div class='container d-flex justify-content-center mt-4 mb-5 '>
 
         <button wire:click="filterCategory('all')"
             class="{{ $category === 'all' ? 'selected-btn' : 'unselected-btn' }}">All</button>

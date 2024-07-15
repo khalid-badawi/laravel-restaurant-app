@@ -15,7 +15,7 @@
     </div>
 
     <div class="container my-5" style="text-align:center;">
-        <h1 class="mb-3">Browse Our Menu</h1>
+        <div class="header-text my-5">Browse Our Menu</div>
         <div class="row">
             <div class="col">
                 <x-category-card imageUrl="images/a.png" title="Breakfast"
@@ -38,6 +38,7 @@
             </div>
         </div>
     </div>
+    <x-ratings />
 @endsection
 
 @vite(['resources/css/pages/home.css'])

@@ -1,5 +1,6 @@
 <?php
 
+use \App\Models\Articles;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -20,7 +21,8 @@ Route::get('/menu', function () {
 })->name('menu');
 
 Route::get('/pages', function () {
-    return view('pages.pages');
+    $articles = Articles::paginate(12);
+    return view('pages.pages', ['articles' => $articles]);
 })->name('pages');
 
 Route::get('/contact', function () {
